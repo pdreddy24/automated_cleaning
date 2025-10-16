@@ -228,8 +228,9 @@ if __name__ == "__main__":
 
     # Schedule daily at 09:00
     schedule.every().day.at("09:00").do(scheduled_pipeline)
-    print("⏰ Scheduler started. Pipeline will run daily at 09:00.")
+    print(" Scheduler started. Pipeline will run daily at 09:00.")
 
     while True:
         schedule.run_pending()
         time.sleep(60)
+
